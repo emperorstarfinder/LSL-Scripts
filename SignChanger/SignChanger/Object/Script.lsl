@@ -1,7 +1,7 @@
 // :SHOW:
 // :CATEGORY:Sign
 // :NAME:SignChanger
-// :AUTHOR:Ferd Frederix
+// :AUTHOR:Fred Beckhusen (Ferd Frederix)
 // :KEYWORDS:
 // :CREATED:2017-11-19 21:56:00
 // :EDITED:2017-11-19  20:56:00
@@ -12,6 +12,7 @@
 // :DESCRIPTION:
 // Timer-based Sign
 // :CODE:
+// This script will chance the texture on a sign every 5 seconds. The time can be changed by changing "llSetTimerEvent(5);" to the time you want.
 integer count ;
 integer current = 0;
 
@@ -47,9 +48,9 @@ default
     }
 
     // if necessary, uncomment this, then touch a face to get the number for use with SetLinkTexture  
-  //  touch_start(integer n) {
+    //touch_start(integer n) {
     //    integer face = llDetectedTouchFace(0);
-      //  llSay(0,(string) face);
+    //    llSay(0,(string) face);
     //}
     
 }

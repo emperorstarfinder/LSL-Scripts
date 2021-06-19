@@ -1,10 +1,10 @@
 // :SHOW:1
 // :CATEGORY:Radio
 // :NAME:MOAP Top 2000 Radio Stations Player
-// :AUTHOR:Ferd Frederix
+// :AUTHOR:Fred Beckhusen (Ferd Frederix)
 // :KEYWORDS:
 // :CREATED:2012-09-04 15:30:52.010
-// :EDITED:2017-11-19  20:55:11
+// :EDITED:2021-04-26  23:06:01
 // :ID:902
 // :NUM:1278
 // :REV:1.1
@@ -14,11 +14,11 @@
 // :CODE:
 
 // More information on this radio player is at <a href="http://www.outworldz.com/Secondlife/posts/streaming">this link</a>
-// Copyright 2010 Ferd Frederix
+// Copyright 2010 Fred Beckhusen (Ferd Frederix)
 // License:
 // Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
 // http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US
-// That means this must always be free. 
+// That means this must always be free.
 
 // V1.1 allow longer names
 
@@ -306,6 +306,7 @@ default {
 
     http_response(key request_id, integer status, list metadata, string body)
     {
+        llSay(0,body);
         if (request_id == http_request_id)
         {
             busy = FALSE;
